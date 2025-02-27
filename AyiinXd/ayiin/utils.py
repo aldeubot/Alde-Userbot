@@ -58,8 +58,8 @@ async def autopilot():
     try:
         r = await bot(
             CreateChannelRequest(
-                title="K𝙰𝚉𝚄-U𝚂𝙴𝚁𝙱𝙾𝚃 Lᴏɢs",
-                about="» Group log Created by: Kazu Userbot\n\n» Support : @kazusupportgrp\n» Support: @Html12text",
+                title="ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ Lᴏɢs",
+                about="» Group log Created by: Mapand Userbot\n\n» Support : Mapand\n» Support: Mapand",
                 megagroup=True,
             ),
         )
@@ -77,7 +77,7 @@ async def autopilot():
     channel = get_peer_id(chat)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://telegra.ph/file/f0383ed4de3a719e2eada.jpg", "photoyins.jpg"
+            "https://graph.org/file/e0cd1a5e0190a6eabac51-4ccaddf9c046bc1214.jpg", "photoyins.jpg"
         )
         ll = await bot.upload_file(photo)
         try:
@@ -106,7 +106,7 @@ async def autobot():
     if who.username:
         username = f"{who.username}_bot"
     else:
-        username = f"Kazu{(str(who.id))[5:]}bot"
+        username = f"Mapand{(str(who.id))[5:]}bot"
     bf = "@BotFather"
     await bot(UnblockRequest(bf))
     await bot.send_message(bf, "/cancel")
@@ -135,7 +135,7 @@ async def autobot():
             sys.exit(1)
     filogo = random.choice(
           [
-              "https://telegra.ph/file/4a7e1523892f591dd7158.jpg",
+              "https://graph.org/file/e0cd1a5e0190a6eabac51-4ccaddf9c046bc1214.jpg",
               "AyiinXd/resources/logo.jpg",
           ]
     )
@@ -174,7 +174,7 @@ async def autobot():
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await bot.send_message(
-                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @Html12text ✨"
+                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ Mapand✨"
             )
             await bot.send_message(
                 BOTLOG_CHATID,
@@ -218,7 +218,7 @@ async def autobot():
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await bot.send_message(
-            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @punyaionnibos ✨"
+            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ Mapand ✨"
         )
         await bot.send_message(
             BOTLOG_CHATID,
