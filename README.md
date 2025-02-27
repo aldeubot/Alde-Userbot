@@ -1,6 +1,6 @@
 <h1 align="center"> ⚡ ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ</h1>
 
-<a href="https://github.com/mapandubot/Kazu-Userbot/commits"> <img src="https://img.shields.io/github/last-commit/sip-Userbot/Nande-Telethon?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
+<a href="https://github.com/mapandubot/Mapand-Userbot/commits"> <img src="https://img.shields.io/github/last-commit/sip-Userbot/Nande-Telethon?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/ionmusic/Kazu-Userbot)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue)](https://github.com/ionmusic/Kazu-Userbot/graphs/commit-activity)
 [![CodeQuality](https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=blue&logo=codacy)](https://app.codacy.com/gh/ionmusic/Kazu-Userbot/dashboard)
@@ -9,7 +9,7 @@
 
 
 <p align="center">
-  <img src="https://telegra.ph/file/a38745137e65f2d74de06.jpg">
+  <img src="https://ibb.co.com/Z6kNn1K0">
 </p>
 
 👩‍💻 ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
