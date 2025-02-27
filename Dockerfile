@@ -1,7 +1,7 @@
 FROM python:3.9
 RUN git clone -b Kazu-Userbot https://github.com/mapandubot/Mapand-Userbot /home/Mapanduserbot/ \
-    && chmod 777 /home/Kazuuserbot \
-    && mkdir /home/Kazuuserbot/bin/
+    && chmod 777 /home/Mapanduserbot \
+    && mkdir /home/Mapanduserbot/bin/
 
 COPY ./sample_config.env ./config.env* /home/Mapanduserbot/
 
