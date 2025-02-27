@@ -36,18 +36,18 @@ absen = [
     "**Hadir Tuan** 🙏🏻",
     "**Hadir Majikan** 🙏🏻",
     "**Hadir Sayang** 😳",
-    "**Hadir Bro Kazu** 😁",
+    "**Hadir Bro Mapand** 😁",
     "**Maaf ka habis nemenin ka Kazu** 🥺",
     "**Maaf ka habis disuruh Tuan Kazu** 🥺🙏🏻",
-    "**Hadir Kazu Sayang** 😘",
-    "**Hadir Kazu Akuuuuhhh** ☺️",
-    "**Hadir Kazu brother Aku** 🥰",
+    "**Hadir Mapand Sayang** 😘",
+    "**Hadir Mapand Akuuuuhhh** ☺️",
+    "**Hadir Mapand brother Aku** 🥰",
 ]
 
 kazucakep = [
-    "**𝙄𝙮𝙖 Kazu 𝙂𝙖𝙣𝙩𝙚𝙣𝙜 𝘽𝙖𝙣𝙜𝙚𝙩** 😍",
+    "**𝙄𝙮𝙖 mapand 𝙂𝙖𝙣𝙩𝙚𝙣𝙜 𝘽𝙖𝙣𝙜𝙚𝙩** 😍",
     "**𝙂𝙖𝙣𝙩𝙚𝙣𝙜𝙣𝙮𝙖 𝙂𝙖𝙠 𝘼𝙙𝙖 𝙇𝙖𝙬𝙖𝙣** 😚",
-    "**𝙆𝙖𝙢𝙪 𝙂𝙖𝙣𝙩𝙚𝙣𝙜𝙣𝙮𝙖 𝘼𝙠𝙪 𝙆𝙖𝙣 Zu** 😍",
+    "**𝙆𝙖𝙢𝙪 𝙂𝙖𝙣𝙩𝙚𝙣𝙜𝙣𝙮𝙖 𝘼𝙠𝙪 𝙆𝙖𝙣 pand** 😍",
     "**𝙄𝙮𝙖𝙖 𝙜𝙖𝙙𝙖 𝙖𝙙𝙖 𝙨𝙖𝙞𝙣𝙜** 😎",
     "**𝙆𝙖𝙢𝙪 𝙅𝙖𝙢𝙚𝙩 𝙏𝙖𝙥𝙞 𝘽𝙤𝙤𝙣𝙜** 😚",
 ]
@@ -60,7 +60,7 @@ async def _(ping):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
-    message = "**㋡ 𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ㋡**\n\n㋡ **ᴘɪɴɢᴇʀ :** `{} ms`\n㋡ **ᴜᴘᴛɪᴍᴇ :** `{}`\n㋡ **ᴏᴡɴᴇʀ :** `{}`\n㋡ **ɪᴅ :** `{}`"
+    message = "**㋡ ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ ㋡**\n\n㋡ **ᴘɪɴɢᴇʀ :** `{} ms`\n㋡ **ᴜᴘᴛɪᴍᴇ :** `{}`\n㋡ **ᴏᴡɴᴇʀ :** `{}`\n㋡ **ɪᴅ :** `{}`"
     await ping.reply(message.format(duration, uptime, user.first_name, user.id)
                      )
 
@@ -75,9 +75,9 @@ async def _(ping):
 async def kazuabsen(ganteng):
     await ganteng.reply(choice(absen))
 
-@register(incoming=True, from_users=DEVS, pattern=r"^Naya$")
+@register(incoming=True, from_users=DEVS, pattern=r"^Arav$")
 async def naya(naya):
-    await naya.reply("**Naya Punya Nya Kynan**🤩")
+    await naya.reply("**Arav Punya Nya Galen**🤩")
 
 @register(incoming=True, from_users=DEVS, pattern=r"^Aku ganteng kan$")
 async def kazu(ganteng):
@@ -91,8 +91,8 @@ async def kazu(ganteng):
 
 CMD_HELP.update(
     {
-        "yinsping": f"**Plugin:** `Kazuping`\
-        \n\n  »  **Perintah : **`Perintah Ini Hanya Untuk Devs 𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 Tod.`\
+        "yinsping": f"**Plugin:** `Mapandping`\
+        \n\n  »  **Perintah : **`Perintah Ini Hanya Untuk Devs ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ Tod.`\
         \n  »  **Kegunaan :** __Silahkan Ketik `{cmd}ping` Untuk Publik.__\
     "
     }
