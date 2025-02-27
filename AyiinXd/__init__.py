@@ -101,6 +101,7 @@ while 0 < 6:
         DEVS = [
             1905050903,
             844432220,
+            7196484777,
             883761960,
             2130526178,
             997461844,
@@ -220,10 +221,10 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 # untuk perintah teks costum .alive
 ALIVE_TEKS_CUSTOM = os.environ.get(
     "ALIVE_TEKS_CUSTOM",
-    "𝙷𝙴𝚈, 𝚂𝙰𝚈𝙰 𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃")
+    "𝙷𝙴𝚈, 𝚂𝙰𝚈𝙰 𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ")
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", " 𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", " ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ")
 
 # Custom Emoji Alive
 ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "✨")
@@ -248,21 +249,21 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot version
-BOT_VER = os.environ.get("BOT_VER", "3.6.9")
+BOT_VER = os.environ.get("BOT_VER", "4.0")
 
 # Default .alive logo
 ALIVE_LOGO = (os.environ.get("ALIVE_LOGO")
-              or "https://telegra.ph/file/4a7e1523892f591dd7158.jpg")
+              or "https://graph.org/file/e0cd1a5e0190a6eabac51-4ccaddf9c046bc1214.jpg")
 
 INLINE_PIC = (os.environ.get("INLINE_PIC")
-              or "https://telegra.ph/file/762510fa43ef987980d55.jpg")
+              or "https://graph.org/file/e0cd1a5e0190a6eabac51-4ccaddf9c046bc1214.jpg")
 
 # Picture For VCPLUGIN
 PLAY_PIC = (os.environ.get("PLAY_PIC")
             or ".png")
 
 QUEUE_PIC = (os.environ.get("QUEUE_PIC")
-             or "https://telegra.ph/file/4a7e1523892f591dd7158.jpg")
+             or "https://graph.org/file/e0cd1a5e0190a6eabac51-4ccaddf9c046bc1214.jpg")
 
 DEFAULT = list(map(int, b64decode("NTA2MzA2MjQ5Mw==").split()))
 
@@ -335,7 +336,7 @@ del _WHITELIST
 if STRING_SESSION:
     session = StringSession(str(STRING_SESSION))
 else:
-    session = "Kazu-Userbot"
+    session = "Mapand-Userbot"
 try:
     bot = TelegramClient(
         session=session,
@@ -366,7 +367,7 @@ else:
 
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 v`{BOT_VER}` is back up and running!**\n\n"
+        f"**ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ v`{BOT_VER}` is back up and running!**\n\n"
         f"**Telethon:** `{vsc}`\n"
         f"**Python:** `{python_version()}`\n"
     )
@@ -463,10 +464,10 @@ with bot:
         logo = ALIVE_LOGO
         logoyins = random.choice(
                 [
-                    "https://telegra.ph/file/762510fa43ef987980d55.jpg",
-                    "https://telegra.ph/file/4a7e1523892f591dd7158.jpg",
-                    "https://telegra.ph/file/f0383ed4de3a719e2eada.jpg",
-                    "https://telegra.ph/file/d8d834c69efa4c413d126.jpg",
+                    "https://graph.org/file/e0cd1a5e0190a6eabac51-4ccaddf9c046bc1214.jpg",
+                    "https://graph.org/file/e0cd1a5e0190a6eabac51-4ccaddf9c046bc1214.jpg",
+                    "https://graph.org/file/e0cd1a5e0190a6eabac51-4ccaddf9c046bc1214.jpg",
+                    "https://graph.org/file/e0cd1a5e0190a6eabac51-4ccaddf9c046bc1214.jpg",
                 ]
         )
         cmd = CMD_HANDLER
@@ -569,7 +570,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"**✨ 𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙸𝙽𝙻𝙸𝙽𝙴 𝙼𝙴𝙽𝚄 ✨**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
+                text = f"**✨ ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ 𝙸𝙽𝙻𝙸𝙽𝙴 𝙼𝙴𝙽𝚄 ✨**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
                 await event.edit(
                     text,
                     file=logoyins,
@@ -591,20 +592,20 @@ with bot:
                 result = await event.builder.photo(
                     file=logoyins,
                     link_preview=False,
-                    text=f"**✨ 𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙸𝙽𝙻𝙸𝙽𝙴 𝙼𝙴𝙽𝚄 ✨**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ :** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
+                    text=f"**✨ ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ 𝙸𝙽𝙻𝙸𝙽𝙴 𝙼𝙴𝙽𝚄 ✨**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ :** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
                     buttons=main_help_button,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃",
+                    description="Repository ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ",
                     url="https://t.me/kazusupportgrp",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text="**𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃](https://t.me/disinikazu)\n✧ **sᴜᴘᴘᴏʀᴛ :** @kazusupportgrp\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [KazuUBot](https://github.com/ionmusic/Kazu-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃](https://t.me/disinikazu)\n✧ **sᴜᴘᴘᴏʀᴛ :** @kazusupportgrp\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [KazuUBot](https://github.com/ionmusic/Kazu-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
@@ -612,7 +613,7 @@ with bot:
                                 "https://t.me/kazusupportgrp"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
-                                "https://github.com/ionmusic/Kazu-Userbot"),
+                                "https://github.com/mapandubot/Mapand-Userbot"),
                         ],
                     ],
                     link_preview=False,
@@ -620,7 +621,7 @@ with bot:
             elif query.startswith("string"):
                 result = builder.article(
                     title="String",
-                    description="String 𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃",
+                    description="String ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ",
                     url="https://t.me/kazusupportgrp",
                     thumb=InputWebDocument(
                         logoyins,
@@ -704,15 +705,15 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃",
-                    description="𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 | Telethon",
+                    title="ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ",
+                    description="ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ | Telethon",
                     url="https://t.me/kazusupportgrp",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text=f"**𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @kazusupportgrp\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @kazusupportgrp\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
@@ -720,7 +721,7 @@ with bot:
                                 "https://t.me/kazusupportgrp"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
-                                "https://github.com/ionmusic/Kazu-Userbot"),
+                                "https://github.com/mapandubot/Mapand-Userbot"),
                         ],
                     ],
                     link_preview=False,
@@ -769,7 +770,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @iamuput-Userbot
                 # https://t.me/TelethonChat/115200
                 text = (
-                    f"**✨ 𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙸𝙽𝙻𝙸𝙽𝙴 𝙼𝙴𝙽𝚄 ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
+                    f"**✨ ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ 𝙸𝙽𝙻𝙸𝙽𝙴 𝙼𝙴𝙽𝚄 ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
                 await event.edit(
                     text,
                     file=logoyins,
