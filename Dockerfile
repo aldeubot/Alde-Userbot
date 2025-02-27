@@ -1,5 +1,5 @@
 FROM python:3.9
-RUN git clone -b Kazu-Userbot https://github.com/mapandubot/Mapand-Userbot /home/Mapanduserbot/ \
+RUN git clone -b Mapand-Userbot https://github.com/mapandubot/Mapand-Userbot /home/Mapanduserbot/ \
     && chmod 777 /home/Mapanduserbot \
     && mkdir /home/Mapanduserbot/bin/
 
