@@ -77,7 +77,7 @@ async def autopilot():
     channel = get_peer_id(chat)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://deposit.pictures/p/8d87ca7ef7a94c6ca57583ffbb09c1a4", "photoyins.jpg"
+            "https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg", "photoyins.jpg"
         )
         ll = await bot.upload_file(photo)
         try:
@@ -135,7 +135,7 @@ async def autobot():
             sys.exit(1)
     filogo = random.choice(
           [
-              "https://deposit.pictures/p/8d87ca7ef7a94c6ca57583ffbb09c1a4",
+              "https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg",
               "AyiinXd/resources/logo.jpg",
           ]
     )
