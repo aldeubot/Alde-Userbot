@@ -48,9 +48,9 @@ Selamat bersenang-senang.
 ### Tutorial Deploy di VPS
 
 
- • `git clone https://github.com/ionmusic/Kazu-Userbot`
+ • `git clone https://github.com/aldeubot/Alde-Userbot`
 
- • `cd Kazu-Userbot`
+ • `cd Alde-Userbot`
 
  • `pip3 install -U -r requirements.txt`
 
@@ -62,7 +62,7 @@ Selamat bersenang-senang.
   - ketik ctrl + S
   - ctrl + X
 
- • `screen -S Kazu-Userbot`
+ • `screen -S Alde-Userbot`
 
  • `bash start`
 
@@ -72,7 +72,7 @@ Selamat bersenang-senang.
 <summary><b>🔗 Deploy To Heroku</b></summary>
 <br>
 
-<p><a href="https://heroku.com/deploy?template=https://github.com/mapandubot/Mapand-Userbot"><img src="https://img.shields.io/badge/BUAT DI-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
+<p><a href="https://heroku.com/deploy?template=https://github.com/aldeubot/Alde-Userbot"><img src="https://img.shields.io/badge/BUAT DI-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
 
 </details>
 
