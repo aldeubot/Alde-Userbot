@@ -58,8 +58,8 @@ async def autopilot():
     try:
         r = await bot(
             CreateChannelRequest(
-                title="ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ Lᴏɢs",
-                about="» Group log Created by: Mapand Userbot\n\n» Support : Mapand\n» Support: Mapand",
+                title="ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ Lᴏɢs",
+                about="» Group log Created by: Alde Userbot\n\n» Support : Mapand\n» Support: Mapand",
                 megagroup=True,
             ),
         )
@@ -77,7 +77,7 @@ async def autopilot():
     channel = get_peer_id(chat)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://graph.org/file/e0cd1a5e0190a6eabac51-4ccaddf9c046bc1214.jpg", "photoyins.jpg"
+            "https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg", "photoyins.jpg"
         )
         ll = await bot.upload_file(photo)
         try:
@@ -218,7 +218,7 @@ async def autobot():
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await bot.send_message(
-            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ Mapand ✨"
+            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ Alde-Userbot ✨"
         )
         await bot.send_message(
             BOTLOG_CHATID,
