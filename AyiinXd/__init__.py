@@ -254,10 +254,10 @@ BOT_VER = os.environ.get("BOT_VER", "4.0")
 
 # Default .alive logo
 ALIVE_LOGO = (os.environ.get("ALIVE_LOGO")
-              or "https://deposit.pictures/p/8d87ca7ef7a94c6ca57583ffbb09c1a4")
+              or "https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg")
 
 INLINE_PIC = (os.environ.get("INLINE_PIC")
-              or "https://deposit.pictures/p/8d87ca7ef7a94c6ca57583ffbb09c1a4")
+              or "https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg")
 
 # Picture For VCPLUGIN
 PLAY_PIC = (os.environ.get("PLAY_PIC")
