@@ -275,7 +275,7 @@ CMD_HELP.update(
     {
         "sleep": f"**Plugin : **`sleep`\
         \n\n  »  **Perintah :** `{cmd}sleep`\
-        \n  »  **Kegunaan : **Biarkan Mapand-Userbot tidur selama beberapa detik \
+        \n  »  **Kegunaan : **Biarkan Alde-Userbot tidur selama beberapa detik \
     "
     }
 )
@@ -283,11 +283,11 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "repo": f"**Plugin : **`Repository Mapand-Userbot`\
+        "repo": f"**Plugin : **`Repository Alde-Userbot`\
         \n\n  »  **Perintah :** `{cmd}repo`\
-        \n  »  **Kegunaan : **Menampilan link Repository Mapand-Userbot\
+        \n  »  **Kegunaan : **Menampilan link Repository Alde-Userbot\
         \n\n  »  **Perintah :** `{cmd}string`\
-        \n  »  **Kegunaan : **Menampilan link String Mapand-Userbot\
+        \n  »  **Kegunaan : **Menampilan link String Alde-Userbot\
     "
     }
 )
@@ -305,7 +305,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "restart": f"**Plugin : **`Restart Mapand-Userbot`\
+        "restart": f"**Plugin : **`Restart Alde-Userbot`\
         \n\n  »  **Perintah :** `{cmd}restart`\
         \n  »  **Kegunaan : **Untuk Merestart userbot.\
     "
