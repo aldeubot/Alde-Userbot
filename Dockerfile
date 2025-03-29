@@ -1,11 +1,11 @@
 FROM python:3.9
-RUN git clone -b Mapand-Userbot https://github.com/mapandubot/Mapand-Userbot /home/Mapanduserbot/ \
-    && chmod 777 /home/Mapanduserbot \
-    && mkdir /home/Mapanduserbot/bin/
+RUN git clone -b Alde-Userbot https://github.com/aldeubot/Alde-Userbot /home/Aldeuserbot/ \
+    && chmod 777 /home/Aldeuserbot \
+    && mkdir /home/Aldeuserbot/bin/
 
-COPY ./sample_config.env ./config.env* /home/Mapanduserbot/
+COPY ./sample_config.env ./config.env* /home/Aldeuserbot/
 
-WORKDIR /home/Mapanduserbot/
+WORKDIR /home/Aldeuserbot/
 
 RUN pip install --upgrade pip
 RUN pip install --upgrade pip setuptools wheel
