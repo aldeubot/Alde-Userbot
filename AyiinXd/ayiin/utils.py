@@ -77,7 +77,7 @@ async def autopilot():
     channel = get_peer_id(chat)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg", "photoyins.jpg"
+            "https://deposit.pictures/p/8d87ca7ef7a94c6ca57583ffbb09c1a4", "photoyins.jpg"
         )
         ll = await bot.upload_file(photo)
         try:
@@ -98,15 +98,15 @@ async def autobot():
     await bot.start()
     await asyncio.sleep(15)
     await bot.send_message(
-        BOTLOG_CHATID, "**SABAR SAYANG LAGI BUAT ASSISTANT BOT KAMU DI @BotFather**"
+        BOTLOG_CHATID, "**creating  your assistant bot on @BotFather**"
     )
-    LOGS.info("TUNGGU SEBENTAR SAYANG. SEDANG MEMBUAT ASSISTANT BOT UNTUK KAMU")
+    LOGS.info("**we are in the process of creating a bot for you, please wait.**")
     who = await bot.get_me()
     name = f"{who.first_name} Assistant Bot"
     if who.username:
         username = f"{who.username}_bot"
     else:
-        username = f"Mapand{(str(who.id))[5:]}bot"
+        username = f"Alde{(str(who.id))[5:]}bot"
     bf = "@BotFather"
     await bot(UnblockRequest(bf))
     await bot.send_message(bf, "/cancel")
@@ -135,7 +135,7 @@ async def autobot():
             sys.exit(1)
     filogo = random.choice(
           [
-              "https://graph.org/file/e0cd1a5e0190a6eabac51-4ccaddf9c046bc1214.jpg",
+              "https://deposit.pictures/p/8d87ca7ef7a94c6ca57583ffbb09c1a4",
               "AyiinXd/resources/logo.jpg",
           ]
     )
@@ -145,7 +145,7 @@ async def autobot():
     await bot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
-        username = f"Mapand{str(who.id)[6:]}{ran}bot"
+        username = f"Alde{str(who.id)[6:]}{ran}bot"
         await bot.send_message(bf, username)
         await asyncio.sleep(1)
         nowdone = (await bot.get_messages(bf, limit=1))[0].text
@@ -167,24 +167,24 @@ async def autobot():
             await asyncio.sleep(1)
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
-            await bot.send_message(bf, f"Managed With ✨ By {who.first_name}")
+            await bot.send_message(bf, f"Managed By {who.first_name}")
             await asyncio.sleep(3)
             await bot.send_message(bf, "/setdescription")
             await asyncio.sleep(1)
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await bot.send_message(
-                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ Mapand✨"
+                bf, f"ᯓ★ Owner - {who.first_name} \n\nᯓ★ Powered By - jmany"
             )
             await bot.send_message(
                 BOTLOG_CHATID,
-                f"**BERHASIL MEMBUAT ASSISTANT BOT KAMU DENGAN USERNAME @{username}**",
+                f"**complete creating bot @{username}**",
             )
             LOGS.info(
-                f"BERHASIL MEMBUAT ASSISTANT BOT KAMU DENGAN USERNAME @{username}")
+                f"complete creating your assistant bot with id @{username}")
             await bot.send_message(
                 BOTLOG_CHATID,
-                "**SEDANG MERESTART USERBOT TUNGGU SEBENTAR SAYANG.**",
+                "**restarting userbot. renewal userbot just pm @jmany.**",
             )
             heroku_var["BOT_TOKEN"] = token
             heroku_var["BOT_USERNAME"] = f"@{username}"
@@ -211,24 +211,24 @@ async def autobot():
         await asyncio.sleep(1)
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
-        await bot.send_message(bf, f"Managed With ✨ By {who.first_name}")
+        await bot.send_message(bf, f"Managed By {who.first_name}")
         await asyncio.sleep(3)
         await bot.send_message(bf, "/setdescription")
         await asyncio.sleep(1)
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await bot.send_message(
-            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ Alde-Userbot ✨"
+            bf, f"ᯓ★ Owner - {who.first_name} \n\nᯓ★ Powered By - jmany"
         )
         await bot.send_message(
             BOTLOG_CHATID,
-            f"**BERHASIL MEMBUAT ASSISTANT BOT KAMU DENGAN USERNAME @{username}**",
+            f"**complete creating your assistant bot with id @{username}**",
         )
         LOGS.info(
-            f"BERHASIL MEMBUAT ASSISTANT BOT KAMU DENGAN USERNAME @{username}")
+            f"complete creating your assistant bot with id @{username}")
         await bot.send_message(
             BOTLOG_CHATID,
-            "**SEDANG MERESTART USERBOT TUNGGU SEBENTAR SAYANG.**",
+            "**restarting userbot. renewal userbot just pm @jmany.**",
         )
         heroku_var["BOT_TOKEN"] = token
         heroku_var["BOT_USERNAME"] = f"@{username}"
