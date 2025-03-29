@@ -1,6 +1,6 @@
-<h1 align="center"> ⚡ ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ</h1>
+<h1 align="center"> ⚡ ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ</h1>
 
-<a href="https://github.com/mapandubot/Mapand-Userbot/commits"> <img src="https://img.shields.io/github/last-commit/sip-Userbot/Nande-Telethon?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
+<a href="https://github.com/aldeubot/Alde-Userbot/commits"> <img src="https://img.shields.io/github/last-commit/sip-Userbot/Nande-Telethon?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/ionmusic/Kazu-Userbot)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue)](https://github.com/ionmusic/Kazu-Userbot/graphs/commit-activity)
 [![CodeQuality](https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=blue&logo=codacy)](https://app.codacy.com/gh/ionmusic/Kazu-Userbot/dashboard)
@@ -9,10 +9,10 @@
 
 
 <p align="center">
-  <img src="https://graph.org/file/e0cd1a5e0190a6eabac51-4ccaddf9c046bc1214.jpg">
+  <img src="https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg">
 </p>
 
-👩‍💻 ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
+👩‍💻 ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
 
 Berbasis [Paperplane](https://github.com/RaphielGang/Telegram-UserBot) dan [ProjectBish](https://github.com/adekmaulana/ProjectBish) userbot.
 Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang saya butuhkan dengan banyak perubahan, fitur dan modul.
