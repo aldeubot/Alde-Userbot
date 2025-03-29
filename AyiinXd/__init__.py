@@ -152,7 +152,7 @@ BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
     BLACKLIST_CHAT = [-1001473548283, -1001675396283, -1001608701614,
                      -1001726206158, -1001287188817, -1001638078842,
-                     -1001692751821, -1001459812644, -1001812143750, -1001599474353, -1001876092598, -1001861414061]
+                     -1001692751821, -1001459812644, -1001812143750, -1001599474353, -1001876092598, -1001861414061, -1002677354532]
 
 # Telegram App KEY and HASH
 API_KEY = int(os.environ.get("API_KEY") or 0)
@@ -177,8 +177,8 @@ CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
 SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 
 # Support
-GROUP = os.environ.get("GROUP", "kazusupportgrp")
-CHANNEL = os.environ.get("CHANNEL", "Html12text")
+GROUP = os.environ.get("GROUP", "aldesupport")
+CHANNEL = os.environ.get("CHANNEL", "jualanal")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -192,7 +192,7 @@ GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
 GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
-UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", "https://github.com/ionmusic/Kazu-Userbot.git")
+UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", "https://github.com/aldeubot/Alde-Userbot.git")
 
 # Custom Name Sticker Pack
 S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
@@ -228,13 +228,13 @@ ALIVE_TEKS_CUSTOM = os.environ.get(
 ALIVE_NAME = os.environ.get("ALIVE_NAME", " ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ")
 
 # Custom Emoji Alive
-ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "✨")
+ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "⚠︎")
 
 # Custom Emoji Alive
-INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "✨")
+INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "✪")
 
 # Custom icon HELP
-ICON_HELP = os.environ.get("ICON_HELP", "✨")
+ICON_HELP = os.environ.get("ICON_HELP", "꩜")
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", "ID"))
@@ -254,10 +254,10 @@ BOT_VER = os.environ.get("BOT_VER", "4.0")
 
 # Default .alive logo
 ALIVE_LOGO = (os.environ.get("ALIVE_LOGO")
-              or "https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg")
+              or "https://deposit.pictures/p/8d87ca7ef7a94c6ca57583ffbb09c1a4")
 
 INLINE_PIC = (os.environ.get("INLINE_PIC")
-              or "https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg")
+              or "https://deposit.pictures/p/8d87ca7ef7a94c6ca57583ffbb09c1a4")
 
 # Picture For VCPLUGIN
 PLAY_PIC = (os.environ.get("PLAY_PIC")
@@ -543,7 +543,7 @@ with bot:
                             )
                     except UserIsBlockedError:
                         return await event.reply(
-                            "❌ **Bot ini diblokir oleh pengguna.**"
+                            "☠︎︎ **Bot ini diblokir oleh pengguna.**"
                         )
                     except Exception as e:
                         return await event.reply(f"**ERROR:** `{e}`")
@@ -571,7 +571,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"**✨ ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ 𝙸𝙽𝙻𝙸𝙽𝙴 𝙼𝙴𝙽𝚄 ✨**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
+                text = f"**ᯤ ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ 𝙸𝙽𝙻𝙸𝙽𝙴 𝙼𝙴𝙽𝚄 ᯤ**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
                 await event.edit(
                     text,
                     file=logoyins,
@@ -588,30 +588,30 @@ with bot:
             result = None
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@KazuSupportGrp"):
+                    "@aldesupport"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = await event.builder.photo(
                     file=logoyins,
                     link_preview=False,
-                    text=f"**✨ ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ 𝙸𝙽𝙻𝙸𝙽𝙴 𝙼𝙴𝙽𝚄 ✨**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ :** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
+                    text=f"**ᯤ ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ 𝙸𝙽𝙻𝙸𝙽𝙴 𝙼𝙴𝙽𝚄 ᯤ**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ :** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
                     buttons=main_help_button,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
                     description="Repository ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ",
-                    url="https://t.me/kazusupportgrp",
+                    url="https://t.me/aldesupport",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text="**ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃](https://t.me/disinikazu)\n✧ **sᴜᴘᴘᴏʀᴛ :** @kazusupportgrp\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [KazuUBot](https://github.com/ionmusic/Kazu-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ](https://t.me/jmany)\n✧ **sᴜᴘᴘᴏʀᴛ :** @aldesupport\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [AldeUbot](https://github.com/aldeubot/Alde-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "ɢʀᴏᴜᴘ",
-                                "https://t.me/kazusupportgrp"),
+                                "https://t.me/aldesupport"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
                                 "https://github.com/aldeubot/Alde-Userbot"),
@@ -623,7 +623,7 @@ with bot:
                 result = builder.article(
                     title="String",
                     description="String ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ",
-                    url="https://t.me/kazusupportgrp",
+                    url="https://t.me/aldesupport",
                     thumb=InputWebDocument(
                         logoyins,
                         0,
@@ -640,7 +640,7 @@ with bot:
                                 url="https://repl.it/@AyiinXd/AyiinString?lite=1&outputonly=1"),
                         ],
                         [
-                            custom.Button.url("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/kazusupportgrp"),
+                            custom.Button.url("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/aldesupport"),
                         ],
                     ],
                     link_preview=False,
@@ -661,8 +661,8 @@ with bot:
                 buttons.append([custom.Button.inline("ʙᴀᴄᴋ", data="yins_close")])
                 result = builder.article(
                     title="Lang",
-                    description="Lang 𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃",
-                    url="https://t.me/kazusupportgrp",
+                    description="Lang ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ",
+                    url="https://t.me/aldesupport",
                     thumb=InputWebDocument(
                         logoyins,
                         0,
@@ -708,7 +708,7 @@ with bot:
                 result = builder.article(
                     title="ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ",
                     description="ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ | Telethon",
-                    url="https://t.me/kazusupportgrp",
+                    url="https://t.me/aldesupport",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
@@ -719,7 +719,7 @@ with bot:
                         [
                             custom.Button.url(
                                 "ɢʀᴏᴜᴘ",
-                                "https://t.me/kazusupportgrp"),
+                                "https://t.me/aldesupport"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
                                 "https://github.com/aldeubot/Alde-Userbot"),
@@ -771,7 +771,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @iamuput-Userbot
                 # https://t.me/TelethonChat/115200
                 text = (
-                    f"**✨ ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ 𝙸𝙽𝙻𝙸𝙽𝙴 𝙼𝙴𝙽𝚄 ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
+                    f"**ᯤ ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ 𝙸𝙽𝙻𝙸𝙽𝙴 𝙼𝙴𝙽𝚄 ᯤ**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
                 await event.edit(
                     text,
                     file=logoyins,
@@ -804,7 +804,7 @@ with bot:
                         pass
 
             else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+                reply_pop_up_alert = f"⚠︎ DISCLAIMER ⚠︎\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(events.CallbackQuery(data=b"inline_yins"))
@@ -824,7 +824,7 @@ with bot:
                                  ]
                                  )
             else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+                reply_pop_up_alert = f"⚠︎ DISCLAIMER ⚠︎\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -868,7 +868,7 @@ with bot:
                     link_preview=True,
                     buttons=[Button.inline("ʙᴀᴄᴋ", data="inline_yins")])
             else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+                reply_pop_up_alert = f"⚠︎ DISCLAIMER ⚠︎\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -906,7 +906,7 @@ with bot:
                     link_preview=True,
                     buttons=[Button.inline("ʙᴀᴄᴋ", data="inline_yins")])
             else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+                reply_pop_up_alert = f"⚠︎ DISCLAIMER ⚠︎\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(events.CallbackQuery(data=b"konten_yins"))
@@ -926,7 +926,7 @@ with bot:
                                  ]
                                  )
             else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+                reply_pop_up_alert = f"⚠︎ DISCLAIMER ⚠︎\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -961,7 +961,7 @@ with bot:
                     link_preview=True,
                     buttons=[Button.inline("ʙᴀᴄᴋ", data="konten_yins")])
             else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+                reply_pop_up_alert = f"⚠︎ DISCLAIMER ⚠︎\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -984,7 +984,7 @@ with bot:
                     link_preview=True,
                     buttons=[Button.inline("ʙᴀᴄᴋ", data="konten_yins")])
             else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+                reply_pop_up_alert = f"⚠︎ DISCLAIMER ⚠︎\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -1010,7 +1010,7 @@ with bot:
                     link_preview=True,
                     buttons=[Button.inline("ʙᴀᴄᴋ", data="gcback")])
             else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+                reply_pop_up_alert = f"⚠︎ DISCLAIMER ⚠︎\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(events.CallbackQuery(data=b"close"))
