@@ -64,7 +64,7 @@ class Ayiin:
         try:
             await bot(
                 functions.phone.CreateGroupCallRequest(
-                    self._chat, title="🎧 Mapand Music 🎧"
+                    self._chat, title="🎧 Aldean Ngobrol 🎧"
                 )
             )
         except Exception as e:
