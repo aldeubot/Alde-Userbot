@@ -1,9 +1,9 @@
 {
-  "name": "Mapand-Userbot",
-  "description": "[Mapand-Userbot] Selamat pakai, Luh songong gw Banting",
-  "logo": "https://graph.org/file/e0cd1a5e0190a6eabac51-4ccaddf9c046bc1214.jpg",
-  "keywords": ["telegram", "userbot", "Mapand-Userbot", "modular", "python"],
-  "repository": "https://github.com/mapandubot/Mapand-Userbot",
+  "name": "Alde-Userbot",
+  "description": "[Alde-Userbot] Selamat pakai, Luh songong gw Banting",
+  "logo": "https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg",
+  "keywords": ["telegram", "userbot", "Alde-Userbot", "modular", "python"],
+  "repository": "https://github.com/aldeubot/Alde-Userbot",
   "stack": "container",
   "env": {
     "API_KEY": {
