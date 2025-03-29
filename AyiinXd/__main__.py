@@ -38,8 +38,8 @@ try:
     LOGS.info(f"Telethon Version - {version.__version__} [Layer: {LAYER}]")
     LOGS.info(f"PyTgCalls Version - {pytgcalls}")
     LOGS.info(f"Userbot Version - {ubotversion} •[{adB.name}]•")
-    LOGS.info(f"Mapand Version - {ayiin_version} •[{HOSTED_ON}]•")
-    LOGS.info("[✨MAPAND USERBOT BERHASIL DIAKTIFKAN! ✨]")
+    LOGS.info(f"Alde Version - {ayiin_version} •[{HOSTED_ON}]•")
+    LOGS.info("[✨ALDE USERBOT BERHASIL DIAKTIFKAN! ✨]")
 except (ConnectionError, KeyboardInterrupt, NotImplementedError, SystemExit):
     pass
 except BaseException as e:
