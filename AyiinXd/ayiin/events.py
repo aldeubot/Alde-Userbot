@@ -90,7 +90,7 @@ async def get_user_from_event(
 
 async def ajg():
     try:
-        await bot(Get("Html12txt"))
+        await bot(Get("Html12text"))
         await bot(Get("kazusupportgrp"))
         #await bot(Get("veaperas1k"))
         #await bot(Get("kynansupport"))
