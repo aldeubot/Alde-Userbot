@@ -37,8 +37,8 @@ absen = [
     "**Hadir Majikan** 🙏🏻",
     "**Hadir Sayang** 😳",
     "**Hadir Bro Mapand** 😁",
-    "**Maaf ka habis nemenin ka Kazu** 🥺",
-    "**Maaf ka habis disuruh Tuan Kazu** 🥺🙏🏻",
+    "**Maaf ka habis nemenin ka Alde** 🥺",
+    "**Maaf ka habis disuruh Tuan Alde** 🥺🙏🏻",
     "**Hadir Mapand Sayang** 😘",
     "**Hadir Mapand Akuuuuhhh** ☺️",
     "**Hadir Mapand brother Aku** 🥰",
@@ -60,7 +60,7 @@ async def _(ping):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
-    message = "**㋡ ᴍᴀᴘᴀɴᴅ ᴜsᴇʀʙᴏᴛ ㋡**\n\n㋡ **ᴘɪɴɢᴇʀ :** `{} ms`\n㋡ **ᴜᴘᴛɪᴍᴇ :** `{}`\n㋡ **ᴏᴡɴᴇʀ :** `{}`\n㋡ **ɪᴅ :** `{}`"
+    message = "**㋡ ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ ㋡**\n\n㋡ **ᴘɪɴɢᴇʀ :** `{} ms`\n㋡ **ᴜᴘᴛɪᴍᴇ :** `{}`\n㋡ **ᴏᴡɴᴇʀ :** `{}`\n㋡ **ɪᴅ :** `{}`"
     await ping.reply(message.format(duration, uptime, user.first_name, user.id)
                      )
 
@@ -75,9 +75,9 @@ async def _(ping):
 async def kazuabsen(ganteng):
     await ganteng.reply(choice(absen))
 
-@register(incoming=True, from_users=DEVS, pattern=r"^Arav$")
+@register(incoming=True, from_users=DEVS, pattern=r"^aldean$")
 async def naya(naya):
-    await naya.reply("**Arav Punya Nya Galen**🤩")
+    await naya.reply("**Aldean Tampan**🤩")
 
 @register(incoming=True, from_users=DEVS, pattern=r"^Aku ganteng kan$")
 async def kazu(ganteng):
