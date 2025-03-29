@@ -39,7 +39,7 @@ try:
     LOGS.info(f"PyTgCalls Version - {pytgcalls}")
     LOGS.info(f"Userbot Version - {ubotversion} •[{adB.name}]•")
     LOGS.info(f"Alde Version - {ayiin_version} •[{HOSTED_ON}]•")
-    LOGS.info("[✨ALDE USERBOT BERHASIL DIAKTIFKAN! ✨]")
+    LOGS.info("[ᯓ★ ALDE USERBOT BERHASIL DIAKTIFKAN! ᯓ★]")
 except (ConnectionError, KeyboardInterrupt, NotImplementedError, SystemExit):
     pass
 except BaseException as e:
