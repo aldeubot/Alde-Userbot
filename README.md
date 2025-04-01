@@ -9,7 +9,7 @@
 
 
 <p align="center">
-  <img src="https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg">
+  <img src="https://ar-hosting.pages.dev/1743515701022.jpg">
 </p>
 
 👩‍💻 ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
