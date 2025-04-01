@@ -254,17 +254,17 @@ BOT_VER = os.environ.get("BOT_VER", "4.0")
 
 # Default .alive logo
 ALIVE_LOGO = (os.environ.get("ALIVE_LOGO")
-              or "https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg")
+              or "https://silabotov.ru/img/f3eca899-4776-4853-b54e-37613a202550.jpg")
 
 INLINE_PIC = (os.environ.get("INLINE_PIC")
-              or "https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg")
+              or "https://silabotov.ru/img/f3eca899-4776-4853-b54e-37613a202550.jpg")
 
 # Picture For VCPLUGIN
 PLAY_PIC = (os.environ.get("PLAY_PIC")
             or ".png")
 
 QUEUE_PIC = (os.environ.get("QUEUE_PIC")
-             or "https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg")
+             or "https://silabotov.ru/img/f3eca899-4776-4853-b54e-37613a202550.jpg")
 
 DEFAULT = list(map(int, b64decode("NTA2MzA2MjQ5Mw==").split()))
 
@@ -465,10 +465,10 @@ with bot:
         logo = ALIVE_LOGO
         logoyins = random.choice(
                 [
-                    "https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg",
-                    "https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg",
-                    "https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg",
-                    "https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg",
+                    "https://silabotov.ru/img/f3eca899-4776-4853-b54e-37613a202550.jpg",
+                    "https://silabotov.ru/img/f3eca899-4776-4853-b54e-37613a202550.jpg",
+                    "https://silabotov.ru/img/f3eca899-4776-4853-b54e-37613a202550.jpg",
+                    "https://silabotov.ru/img/f3eca899-4776-4853-b54e-37613a202550.jpg",
                 ]
         )
         cmd = CMD_HANDLER
