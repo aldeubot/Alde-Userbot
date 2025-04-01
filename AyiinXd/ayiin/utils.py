@@ -43,7 +43,7 @@ else:
 
 
 async def autopilot():
-    LOGS.info("TUNGGU SEBENTAR. SEDANG MEMBUAT GROUP LOG USERBOT UNTUK ANDA")
+    LOGS.info("we are in the process of creating a bot for you, please wait.")
     if BOTLOG_CHATID and str(BOTLOG_CHATID).startswith("-100"):
         return
     y = []  # To Refresh private ids
@@ -77,7 +77,7 @@ async def autopilot():
     channel = get_peer_id(chat)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg", "photoyins.jpg"
+            "https://silabotov.ru/img/f3eca899-4776-4853-b54e-37613a202550.jpg", "photoyins.jpg"
         )
         ll = await bot.upload_file(photo)
         try:
@@ -135,7 +135,7 @@ async def autobot():
             sys.exit(1)
     filogo = random.choice(
           [
-              "https://graph.org/file/f97f98b7431c422948a3c-55545c3a71e73d5459.jpg",
+              "https://silabotov.ru/img/f3eca899-4776-4853-b54e-37613a202550.jpg",
               "AyiinXd/resources/logo.jpg",
           ]
     )
