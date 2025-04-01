@@ -31,7 +31,8 @@ from Stringyins import get_string
 async def helpyins(event):
     if event.fwd_from:
         return
-    if args := event.pattern_match.group(1).lower():
+    args = event.pattern_match.group(1).lower() if event.pattern_match.group(1) else None
+    if args: 
         if args in CMD_HELP:
             await eor(event, get_string("help_5").format(CMD_HELP[args], ch))
         else:
@@ -39,10 +40,11 @@ async def helpyins(event):
     else:
         AyiinUBOT = await tgbot.get_me()
         BOT_USERNAME = AyiinUBOT.username
+        
         if BOT_USERNAME is not None:
             chat = "@Botfather"
             try:
-                results = await event.client.inline_query(  # pylint:disable=E0602
+                results = await event.client.inline_query(
                     BOT_USERNAME, "@AyiinXdSupport"
                 )
                 await results[0].click(
@@ -50,7 +52,7 @@ async def helpyins(event):
                 )
                 await event.delete()
             except timout:
-                return await eor(event, f"Bot tidak menanggapi inline kueri.\nSilahkan Ketik `{cmd}restart`"
+                await eor(event, f"Bot tidak menanggapi inline kueri.\nSilahkan Ketik `{cmd}restart`"
                 )
             except noinline:
                 xx = await eor(event, "**Inline Mode Tidak aktif.**\n__Sedang Menyalakannya, Harap Tunggu Sebentar...__",
@@ -73,6 +75,7 @@ async def helpyins(event):
                         fifth = await conv.send_message("Search")
                         sixth = await conv.get_response()
                         await bot.send_read_acknowledge(conv.chat_id)
+                        
                     await xx.edit(
                         f"**Berhasil Menyalakan Mode Inline**\n\n**Ketik** `{cmd}help` **lagi untuk membuka menu bantuan.**"
                     )
