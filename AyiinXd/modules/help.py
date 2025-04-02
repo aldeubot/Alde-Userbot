@@ -46,7 +46,7 @@ async def helpyins(event):
             try:
                 # Mencoba inline query
                 results = await event.client.inline_query(
-                    BOT_USERNAME, "@kazuuserbot"  # Ganti dengan username bot yang benar
+                    BOT_USERNAME, "@aldeuserbot"  # Ganti dengan username bot yang benar
                 )
                 await results[0].click(
                     event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
