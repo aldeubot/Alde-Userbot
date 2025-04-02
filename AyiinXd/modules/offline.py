@@ -55,12 +55,12 @@ async def set_afk(afk_e):
         await afk_e.client(
             UpdateProfileRequest(
                 first_name=user.first_name,
-                last_name=f"{user.last_name}【 OFF 】",
+                last_name=f"{user.last_name}【 ᴏꜰꜰ 】",
             )
         )
     else:
         await afk_e.client(
-            UpdateProfileRequest(first_name=user.first_name, last_name="【 OFF 】")
+            UpdateProfileRequest(first_name=user.first_name, last_name="【 ᴏꜰꜰ 】")
         )
     if BOTLOG_CHATID:
         await afk_e.client.send_message(BOTLOG_CHATID, f"#OFF\n**✧ {owner} Telah OFF!**")
@@ -82,7 +82,7 @@ async def type_afk_is_not_true(notafk):
     user = await notafk.client.get_me()
     owner = user.first_name
     last = user.last_name
-    last1 = last[:-12] if last and last.endswith("【 OFF 】") else ""
+    last1 = last[:-12] if last and last.endswith("【 ᴏꜰꜰ 】") else ""
     back_alive = datetime.now()
     afk_end = back_alive.replace(microsecond=0)
     if ISAFK:
