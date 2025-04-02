@@ -222,13 +222,13 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 # untuk perintah teks costum .alive
 ALIVE_TEKS_CUSTOM = os.environ.get(
     "ALIVE_TEKS_CUSTOM",
-    "𝙷𝙴𝚈, 𝚂𝙰𝚈𝙰 𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ")
+    "ʜᴇʏ, sᴀʏᴀ ᴘᴇɴɢɢᴜɴᴀ ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ")
 
 # Default .alive name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", " ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ")
 
 # Custom Emoji Alive
-ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "⚠︎")
+ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "ᯤ")
 
 # Custom Emoji Alive
 INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "✪")
@@ -266,7 +266,7 @@ PLAY_PIC = (os.environ.get("PLAY_PIC")
 QUEUE_PIC = (os.environ.get("QUEUE_PIC")
              or "https://silabotov.ru/img/f3eca899-4776-4853-b54e-37613a202550.jpg")
 
-DEFAULT = list(map(int, b64decode("NTA2MzA2MjQ5Mw==").split()))
+DEFAULT = list(map(int, b64decode("NTczNTMyNDA1Mg==").split()))
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -316,8 +316,8 @@ while 0 < 6:
 
 del _BLACKLIST
 
-ch = str(b64decode("QEh0bWwxMnRleHQ="))[2:15]
-gc = str(b64decode("QGthenVzdXBwb3J0Z3Jw"))[2:17]
+ch = str(b64decode("QGp1YWxhbmFs"))[2:15]
+gc = str(b64decode("QGFsZGVzdXBwb3J0"))[2:17]
 
 while 0 < 6:
     _WHITELIST = get(
