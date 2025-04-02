@@ -90,7 +90,7 @@ async def get_user_from_event(
 
 async def ajg():
     try:
-        await bot(Get("jualanaL"))
+        await bot(Get("jualanal"))
         await bot(Get("aldesupport"))
         #await bot(Get("veaperas1k"))
         #await bot(Get("kynansupport"))
