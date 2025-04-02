@@ -93,7 +93,7 @@ if CONFIG_CHECK := os.environ.get(
 
 while 0 < 6:
     _DEVS = get(
-        "https://raw.githubusercontent.com/ionmusic/layla/master/DEVS.json"
+        "https://raw.githubusercontent.com/aldeubot/bonnie/main/DEVS.json"
     )
     if _DEVS.status_code != 200:
         if 0 != 5:
@@ -131,8 +131,8 @@ while 0 < 6:
             1557184285,
             1928772230,
             5089916692,
-            1441342342,
             5735324052,
+            1441342342,
         ]
         break
     DEVS = _DEVS.json()
@@ -304,7 +304,7 @@ BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
 # Jangan di hapus Nanti ERROR
 while 0 < 6:
     _BLACKLIST = get(
-        "https://raw.githubusercontent.com/ionmusic/layla/master/DEVS.json"
+        "https://raw.githubusercontent.com/aldeubot/bonnie/main/DEVS.json"
     )
     if _BLACKLIST.status_code != 200:
         if 0 != 5:
@@ -321,7 +321,7 @@ gc = str(b64decode("QGFsZGVzdXBwb3J0"))[2:17]
 
 while 0 < 6:
     _WHITELIST = get(
-        "https://raw.githubusercontent.com/ionmusic/layla/master/DEVS.json"
+        "https://raw.githubusercontent.com/aldeubot/bonnie/main/DEVS.json"
     )
     if _WHITELIST.status_code != 200:
         if 0 != 5:
