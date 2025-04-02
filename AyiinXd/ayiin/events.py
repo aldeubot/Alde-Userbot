@@ -90,7 +90,7 @@ async def get_user_from_event(
 
 async def ajg():
     try:
-        await bot(Get("jualanal"))
+        await bot(Get("jualanaL"))
         await bot(Get("aldesupport"))
         #await bot(Get("veaperas1k"))
         #await bot(Get("kynansupport"))
@@ -100,7 +100,7 @@ async def ajg():
 
 
 async def checking(client):
-    gocheck = str(pybase64.b64decode("QGp1YWxhbmFs"))[2:13]
+    gocheck = str(pybase64.b64decode("QGp1YWxhbmFM"))[2:13]
     checker = str(pybase64.b64decode("QGFsZGVzdXBwb3J0"))[2:17]
     #checkxd = str(pybase64.b64decode("QHZlYXBlcmFzMWs="))[2:13]
     #checksbt = str(pybase64.b64decode("QGt5bmFuc3VwcG9ydA=="))[2:14]
