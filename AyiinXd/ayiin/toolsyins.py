@@ -48,8 +48,8 @@ async def eor(event, text=None, **args):
     if time:
         await sleep(time)
         return await ok.delete()
+        
     return ok
-
 
 async def eod(event, text=None, **kwargs):
     kwargs["time"] = kwargs.get("time", 8)
