@@ -374,7 +374,7 @@ ungban_4: "**\\#𝙐𝙣𝙂𝙗𝙖𝙣𝙣𝙚𝙙_𝙐𝙨𝙚𝙧//**\n\n**�
 # gcast tools
 gcast_1: "**Berikan Sebuah Pesan atau Reply**"
 gcast_2: "**Berhasil Mengirim Pesan Ke** {} **Grup Tod.**\n**Sorry Tod Gagal Mengirim Pesan Ke** {} **Grup.**"
-gcast_3: "`Sedang Mengirim Mohon Bersabar... Kalo Limit Jangan Salahin Kazu Okay...`"
+gcast_3: "`Sedang Mengirim Mohon Bersabar... Kalo Limit Jangan Salahin Alde Okay...`"
 gucast_1: "**Berhasil Mengirim Pesan Ke** {} **Chat Tod.**\n**Sorry Tod Gagal Mengirim Pesan Ke** {} **Chat.**"
 blkls_1: "**🔮 Blacklist GCAST:** `Enabled`\n\n📚 **Blacklist Group:**\n» {}\n\nKetik `{}addblacklist` di grup yang ingin anda tambahkan ke daftar blacklist gcast."
 blkls_2: "**🔮 Blacklist GCAST:** `Disabled`"
@@ -437,8 +437,8 @@ hzmt_3: "`Perintah Hazmat Diaktifkan, Sedang Memproses...`"
 hzmt_4: "`Mohon Maaf, GIF Tidak Bisa...`"
 
 # helper tools
-hlpr_1: "**Hai {} Kalo Anda Tidak Tau Perintah Untuk Memerintah Ku Ketik** `{}help` Atau Bisa Minta Bantuan Ke:\n⍟ **Group Support :** [𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃](t.me/kazusupportgrp)\n⍟ **Channel Kazu :** [𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃](t.me/KazuSupportGrp)\n⍟ **Owner Repo :** [Alde](t.me/jmany)\n⍟ **Repo :** [ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ](https://github.com/aldeubot/Alde-Userbot)\n"
-hlpr_2: "**Daftar Lengkap Vars Dari 𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃:** [KLIK DISINI](https://telegra.ph/List-Variable-Heroku-Untuk- ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ-02-08)"
+hlpr_1: "**Hai {} Kalo Anda Tidak Tau Perintah Untuk Memerintah Ku Ketik** `{}help` Atau Bisa Minta Bantuan Ke:\n⍟ **Group Support :** [ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ](t.me/aldesupport)\n⍟ **Channel :** [ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ](t.me/jualanal)\n⍟ **Owner Repo :** [Alde](t.me/jmany)\n⍟ **Repo :** [ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ](https://github.com/aldeubot/Alde-Userbot)\n"
+hlpr_2: "**Daftar Lengkap Vars Dari ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ:** [KLIK DISINI](https://telegra.ph/List-Variable-Heroku-Untuk- ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ-02-08)"
 
 # hentai tools
 hentai_1: "**Maaf saya tidak bisa mendapatkan manga dari**"
@@ -844,7 +844,7 @@ tgph_2: "**Berhasil diupload ke** [telegra.ph](https://telegra.ph{})"
 tgph_3: "**Mohon Balas Ke Pesan, Untuk Mendapatkan Link Telegraph Permanen.**"
 
 # tempmail tools
-tempmail_1: "**KAZU TEMPMAIL** ~ `{}`\n\n[KLIK DISINI UNTUK VERIFIKASI]({})"
+tempmail_1: "**ALDE TEMPMAIL** ~ `{}`\n\n[KLIK DISINI UNTUK VERIFIKASI]({})"
 tempmail_2: "`Mohon Maaf, Silahkan Buka` @TempMailBot `Lalu Tekan Start dan Coba Lagi.`"
 
 # tiktok tools
@@ -987,8 +987,8 @@ yicpl_2: "**[ᴇʀʀᴏʀ]** Maaf Tod Gagal Dikarenakan Lu Jomblo..."
 # yiinsimg tools
 yimg_1: "`Sedang Menyiapkan Media...`"
 yimg_2: "`Mohon Masukkan Yang Bener...`"
-yimg_3: "⍟ __Sketsa Hasilkan oleh 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃__ ⍟"
-yimg_4: "⍟ __Pixelator Dihasilkan oleh 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃__ ⍟"
+yimg_3: "⍟ __Sketsa Hasilkan oleh ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ__ ⍟"
+yimg_4: "⍟ __Pixelator Dihasilkan oleh ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ__ ⍟"
 
 # yiinstod tools
 tod_1: "    __Truth Or Dare ???__\n\n__Didapatkan Secara Acak__\n**      »» {} ««**"
@@ -1259,4 +1259,4 @@ uzip_1: "`Membuat File Zip...`"
 rzip_1: "`Direktori tidak ditemukan`"
 rzip_2: "`Daftar pos dihapus`"
 
-# =================× 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ×================= #
+# =================× ᴀʟᴅᴇ-ᴜꜱᴇʀʙᴏᴛ ×================= #
