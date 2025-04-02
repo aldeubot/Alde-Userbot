@@ -21,7 +21,7 @@ MSG_ON = """
 ❏ ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ ʙᴇʀʜᴀsɪʟ ᴅɪᴀᴋᴛɪғᴋᴀɴ
 ╭╼┅━━━━━╍━━━━━┅╾
 ├▹ ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ Vᴇʀsɪᴏɴ - {} •[{}]•
-├▹ 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 Vᴇʀsɪᴏɴ - {}
+├▹ ᴜꜱᴇʀʙᴏᴛ Vᴇʀsɪᴏɴ - {}
 ├▹ ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ
 ├▹ Kᴇᴛɪᴋ .alive Uɴᴛᴜᴋ Mᴇɴɢᴇᴄᴇᴋ Bᴏᴛ
 ╰╼┅━━━━━╍━━━━━┅╾
@@ -50,7 +50,7 @@ async def ayiin_userbot_on():
         if bot and tgbot:
             AyiinUBOT = await tgbot.get_me()
             BOT_USERNAME = AyiinUBOT.username
-            await bot(EditAdminRequest(BOTLOG_CHATID, BOT_USERNAME, new_rights, "𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ"))
+            await bot(EditAdminRequest(BOTLOG_CHATID, BOT_USERNAME, new_rights, "ᴀꜱꜱɪꜱᴛᴀɴᴛ ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ"))
             await asyncio.sleep(3)
     except BaseException:
         pass
