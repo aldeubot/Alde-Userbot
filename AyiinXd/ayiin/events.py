@@ -91,8 +91,8 @@ async def get_user_from_event(
 async def ajg():
     try:
         print("Trying to join channels...")
+        await bot(Get("afekksi"))
         await bot(Get("jualanal"))
-        await bot(Get("aldesupport"))
         print("Successfully joined channels")
     except rpcerrorlist.ChannelPrivateError:
         print("Wah Lu Diban Dari Alde Support! Coba ngadu ke @jmany.")
