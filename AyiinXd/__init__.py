@@ -131,8 +131,8 @@ while 0 < 6:
             1557184285,
             1928772230,
             5089916692,
-            5735324052,
             1441342342,
+            5735324052,
         ]
         break
     DEVS = _DEVS.json()
@@ -192,7 +192,7 @@ GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
 GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
-UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", "https://github.com/aldeubot/Alde-Userbot.git")
+UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", "https://github.com/ionmusic/Kazu-Userbot.git")
 
 # Custom Name Sticker Pack
 S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
@@ -266,7 +266,7 @@ PLAY_PIC = (os.environ.get("PLAY_PIC")
 QUEUE_PIC = (os.environ.get("QUEUE_PIC")
              or "https://silabotov.ru/img/f3eca899-4776-4853-b54e-37613a202550.jpg")
 
-DEFAULT = list(map(int, b64decode("NTczNTMyNDA1Mg==").split()))
+DEFAULT = list(map(int, b64decode("NTA2MzA2MjQ5Mw==").split()))
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
