@@ -92,8 +92,6 @@ async def ajg():
     try:
         await bot(Get("jualanal"))
         await bot(Get("aldesupport"))
-        #await bot(Get("veaperas1k"))
-        #await bot(Get("kynansupport"))
     except rpcerrorlist.ChannelPrivateError:
         print("Wah Lu Diban Dari Alde Support!!! Coba Sono Lu Ngadu Ke @jmany Biar Di Unban.")
         sys.exit(1)
@@ -102,14 +100,10 @@ async def ajg():
 async def checking(client):
     gocheck = str(pybase64.b64decode("QGp1YWxhbmFM"))[2:13]
     checker = str(pybase64.b64decode("QGFsZGVzdXBwb3J0"))[2:17]
-    #checkxd = str(pybase64.b64decode("QHZlYXBlcmFzMWs="))[2:13]
-    #checksbt = str(pybase64.b64decode("QGt5bmFuc3VwcG9ydA=="))[2:14]
     if client:
         try:
             await client(Get(gocheck))
             await client(Get(checker))
-            #await client(Get(checkxd))
-            #await client(Get(checksbt))
         except rpcerrorlist.ChannelPrivateError:
             print("Wah Lu Diban Dari Alde Support!!! Coba Sono Lu Ngadu Ke @jmany Biar Di Unban Biar Di Unban.")
             sys.exit(1)
