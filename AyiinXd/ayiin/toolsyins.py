@@ -15,9 +15,9 @@ from telethon.tl.types import MessageService
 
 
 async def eor(event, text=None, **args):
-    ok = None
     time = args.get("time", None)
     edit_time = args.get("edit_time", None)
+    
     if "edit_time" in args:
         del args["edit_time"]
     if "time" in args:
@@ -25,6 +25,8 @@ async def eor(event, text=None, **args):
     if "link_preview" not in args:
         args["link_preview"] = False
     args["reply_to"] = event.reply_to_msg_id or event
+    
+    ok = None  
 
     if event.out and not isinstance(event, MessageService):
         if edit_time:
@@ -47,11 +49,15 @@ async def eor(event, text=None, **args):
     else:
         ok = await event.client.send_message(event.chat_id, text, **args)
 
-    if time and ok:
+    if ok is None:
+        return None  
+
+    if time:
         await sleep(time)
         return await ok.delete()
-        
+
     return ok
+
 async def eod(event, text=None, **kwargs):
     kwargs["time"] = kwargs.get("time", 8)
     return await eor(event, text, **kwargs)
