@@ -109,7 +109,7 @@ async def checking(client):
             await client(Get(gocheck))
             await client(Get(checker))
             #await client(Get(checkxd))
-            await client(Get(checksbt))
+            #await client(Get(checksbt))
         except rpcerrorlist.ChannelPrivateError:
             print("Wah Lu Diban Dari Alde Support!!! Coba Sono Lu Ngadu Ke @jmany Biar Di Unban Biar Di Unban.")
             sys.exit(1)
