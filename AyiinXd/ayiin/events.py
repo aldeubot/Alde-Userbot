@@ -91,8 +91,8 @@ async def get_user_from_event(
 async def ajg():
     try:
         print("Trying to join channels...")
-        await bot(Get("afekksi"))
-        await bot(Get("jualanal"))
+        await bot(Get("juale"))
+        await bot(Get("aldesupport"))
         print("Successfully joined channels")
     except rpcerrorlist.ChannelPrivateError:
         print("Wah Lu Diban Dari Alde Support! Coba ngadu ke @jmany.")
@@ -102,7 +102,7 @@ async def ajg():
         sys.exit(1)
 
 async def checking(client):
-    gocheck = str(pybase64.b64decode("QGp1YWxhbmFM"))[2:13]
+    gocheck = str(pybase64.b64decode("QGp1YWxl"))[2:13]
     checker = str(pybase64.b64decode("QGFsZGVzdXBwb3J0"))[2:17]
     if client:
         try:
