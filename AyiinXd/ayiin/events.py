@@ -4,6 +4,7 @@ from telethon.tl.types import MessageEntityMentionName
 from telethon.errors import rpcerrorlist
 from .logger import logging
 from .tools import edit_delete
+import sys
 from AyiinXd import (
     DEFAULT,
     DEVS,
@@ -14,9 +15,8 @@ from AyiinXd import (
     bot,
     tgbot,
 )
-import sys
-LOGS = logging.getLogger(__name__)
 
+LOGS = logging.getLogger(__name__)
 
 async def get_user_from_event(
     event, yinsevent=None, secondgroup=None, nogroup=False, noedits=False
@@ -34,14 +34,11 @@ async def get_user_from_event(
             user = args[0]
             if len(args) > 1:
                 extra = "".join(args[1:])
-            if user.isnumeric() or (user.startswith("-")
-                                    and user[1:].isnumeric()):
+            if user.isnumeric() or (user.startswith("-") and user[1:].isnumeric()):
                 user = int(user)
             if event.message.entities:
                 probable_user_mention_entity = event.message.entities[0]
-                if isinstance(
-                        probable_user_mention_entity,
-                        MessageEntityMentionName):
+                if isinstance(probable_user_mention_entity, MessageEntityMentionName):
                     user_id = probable_user_mention_entity.user_id
                     user_obj = await event.client.get_entity(user_id)
                     return user_obj, extra
@@ -49,7 +46,8 @@ async def get_user_from_event(
                 user_obj = await event.client.get_entity(user)
                 return user_obj, extra
     except Exception as e:
-        LOGS.error(str(e))
+        LOGS.error(f"Error in get_user_from_event: {str(e)}")
+
     try:
         if nogroup is False:
             if secondgroup:
@@ -63,9 +61,7 @@ async def get_user_from_event(
             previous_message = await event.get_reply_message()
             if previous_message.sender_id is None:
                 if not noedits:
-                    await edit_delete(
-                        yinsevent, "**ERROR: Dia adalah anonymous admin!**", 60
-                    )
+                    await edit_delete(yinsevent, "**ERROR: Dia adalah anonymous admin!**", 60)
                 return None, None
             user_obj = await event.client.get_entity(previous_message.sender_id)
             return user_obj, extra
@@ -78,7 +74,8 @@ async def get_user_from_event(
                 )
             return None, None
     except Exception as e:
-        LOGS.error(str(e))
+        LOGS.error(f"Error in get_user_from_event: {str(e)}")
+
     if not noedits:
         await edit_delete(
             yinsevent,
@@ -90,24 +87,33 @@ async def get_user_from_event(
 
 async def ajg():
     try:
-        print("Trying to join channels...")
-        await bot(Get("juale"))
-        await bot(Get("aldesupport"))
-        print("Successfully joined channels")
+        print("🔄 Trying to join channels...")
+        if bot is not None:
+            await bot(Get("juale"))
+            await bot(Get("aldesupport"))
+            print("✅ Successfully joined channels")
+        else:
+            print("⚠️ Bot instance is None! Make sure bot is running correctly.")
     except rpcerrorlist.ChannelPrivateError:
-        print("Wah Lu Diban Dari Alde Support! Coba ngadu ke @jmany.")
-        sys.exit(1)
+        print("❌ Wah Lu Diban Dari Alde Support! Coba ngadu ke @jmany.")
+        return
     except Exception as e:
-        print(f"Unexpected error: {e}")
-        sys.exit(1)
+        print(f"❌ Unexpected error: {e}")
+        return
 
 async def checking(client):
-    gocheck = str(pybase64.b64decode("QGp1YWxl"))[2:13]
-    checker = str(pybase64.b64decode("QGFsZGVzdXBwb3J0"))[2:17]
-    if client:
-        try:
+    try:
+        gocheck = pybase64.b64decode("QGp1YWxl").decode("utf-8").strip()
+        checker = pybase64.b64decode("QGFsZGVzdXBwb3J0").decode("utf-8").strip()
+
+        print(f"🔍 Checking channel: {gocheck}, {checker}")
+
+        if client:
             await client(Get(gocheck))
             await client(Get(checker))
-        except rpcerrorlist.ChannelPrivateError:
-            print("Wah Lu Diban Dari Alde Support!!! Coba Sono Lu Ngadu Ke @jmany Biar Di Unban Biar Di Unban.")
-            sys.exit(1)
+        else:
+            print("⚠️ Client instance is None! Make sure the client is running correctly.")
+    except rpcerrorlist.ChannelPrivateError:
+        print("❌ Wah Lu Diban Dari Alde Support!!! Coba Sono Lu Ngadu Ke @jmany Biar Di Unban.")
+    except Exception as e:
+        print(f"❌ Unexpected error: {e}")
