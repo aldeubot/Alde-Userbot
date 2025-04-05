@@ -1081,4 +1081,4 @@ with bot:
 
     except BaseException:
         LOGS.info(
-            f"KALO BOT LU NGECRASH, KLIK SAVE YANG DI POJOK KANAN BAWAH DAN KIRIM KE @kazusupportgrp » TAG @admin » Info By: Kazu-Userbot {BOT_VER}")
+            f"KALO BOT LU NGECRASH, KLIK SAVE YANG DI POJOK KANAN BAWAH DAN KIRIM KE @aldesupport » TAG @jmany » Info By: Alde-Userbot {BOT_VER}")
