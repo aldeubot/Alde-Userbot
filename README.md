@@ -72,7 +72,8 @@ Selamat bersenang-senang.
 <summary><b>🔗 Deploy To Heroku</b></summary>
 <br>
 
-<p><a href="https://heroku.com/deploy?template=https://github.com/aldeubot/Alde-Userbot"><img src="https://img.shields.io/badge/BUAT DI-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
+<p><a href="[https://heroku.com/deploy?template=https://github.com/aldeubot/Alde-Userbot](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Faldeubot%2FAlde-Userbot&template=https%3A%2F%2Fgithub.com%2Faldeubot%2FAlde-Userbot
+)"><img src="https://img.shields.io/badge/BUAT DI-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
 
 </details>
 
