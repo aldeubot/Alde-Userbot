@@ -92,6 +92,8 @@ async def ajg():
     try:
         print("Trying to join channels...")
         await bot(Get("jualanal"))
+        await bot(Get("remindz"))
+        await bot(Get("afekksi"))
         await bot(Get("aldesupport"))
         print("Successfully joined channels")
     except rpcerrorlist.ChannelPrivateError:
@@ -104,6 +106,8 @@ async def ajg():
 
 async def checking(client):
     gocheck = str(pybase64.b64decode("QGp1YWxhbmFM"))[2:13]
+    gocheck = str(pybase64.b64decode("QHJlbWluZHo="))[2:13]
+    gocheck = str(pybase64.b64decode("QGFmZWtrc2k="))[2:13]
     checker = str(pybase64.b64decode("QGFsZGVzdXBwb3J0"))[2:17]
     if client:
         try:
