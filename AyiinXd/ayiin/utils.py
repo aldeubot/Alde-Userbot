@@ -136,7 +136,7 @@ async def autobot():
     filogo = random.choice(
           [
               "https://silabotov.ru/img/f3eca899-4776-4853-b54e-37613a202550.jpg",
-              "AyiinXd/resources/logo.jpg",
+              "https://silabotov.ru/img/f3eca899-4776-4853-b54e-37613a202550.jpg",
           ]
     )
     await bot.send_message(bf, username)
@@ -174,7 +174,7 @@ async def autobot():
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await bot.send_message(
-                bf, f"ᯓ★ Owner - {who.first_name} \n\nᯓ★ Powered By - jmany"
+                bf, f"ᯓ★ Owner - {who.first_name} \n\nᯓ★ Powered By - @jualanal"
             )
             await bot.send_message(
                 BOTLOG_CHATID,
