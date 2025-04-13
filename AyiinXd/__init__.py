@@ -606,15 +606,15 @@ with bot:
                         0,
                         "image/jpeg",
                         []),
-                    text="**ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ](https://t.me/jmany)\n✧ **sᴜᴘᴘᴏʀᴛ :** @aldesupport\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [AldeUbot](https://github.com/aldeubot/Alde-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ᴄʜᴀɴɴᴇʟ :** [ᴀʟᴅᴇ ᴜꜱᴇʀʙᴏᴛ](https://t.me/jmany)\n✧ **sᴜᴘᴘᴏʀᴛ :** @aldesupport\n✧ **ᴄʜᴀɴɴᴇʟ :** [store aldean](https://t.me/jualanal)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "ɢʀᴏᴜᴘ",
                                 "https://t.me/aldesupport"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ",
-                                "https://github.com/aldeubot/Alde-Userbot"),
+                                "ᴄʜᴀɴɴᴇʟ",
+                                "https://t.me/jualanal"),
                         ],
                     ],
                     link_preview=False,
@@ -721,8 +721,8 @@ with bot:
                                 "ɢʀᴏᴜᴘ",
                                 "https://t.me/aldesupport"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ",
-                                "https://github.com/aldeubot/Alde-Userbot"),
+                                "ᴄʜᴀɴɴᴇʟ",
+                                "https://t.me/jualanal"),
                         ],
                     ],
                     link_preview=False,
